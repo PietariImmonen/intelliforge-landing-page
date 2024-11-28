@@ -24,7 +24,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <div
-      className="py-24 bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800"
+      className="py-24 bg-gradient-to-b from-neutral-950 to-neutral-800"
       id="testimonials"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

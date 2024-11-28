@@ -1,4 +1,3 @@
-import React from "react";
 import { Check } from "lucide-react";
 
 const features = [
@@ -7,7 +6,6 @@ const features = [
   "Real-world case studies",
   "Practice exercises",
   "Community support",
-  "Certificate of completion",
 ];
 
 export function Pricing() {
@@ -30,7 +28,7 @@ export function Pricing() {
                 <h3 className="text-lg font-semibold leading-8 text-gray-900">
                   Free Course
                 </h3>
-                <p className="rounded-full bg-[#FFE612]/10 px-2.5 py-1 text-xs font-semibold leading-5 text-[#FFE612]">
+                <p className="rounded-full bg-blue-100 px-2.5 py-1 text-xs font-semibold leading-5 text-blue-700">
                   Popular
                 </p>
               </div>
@@ -75,7 +73,7 @@ export function Pricing() {
                 <h3 className="text-lg font-semibold leading-8 text-gray-900">
                   Enterprise
                 </h3>
-                <p className="rounded-full bg-[#FFE612]/10 px-2.5 py-1 text-xs font-semibold leading-5 text-[#FFE612]">
+                <p className="rounded-full bg-green-100 px-2.5 py-1 text-xs font-semibold leading-5 text-green-700">
                   Best value
                 </p>
               </div>

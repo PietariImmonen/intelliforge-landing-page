@@ -40,7 +40,10 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <footer
+      className="bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-800 dark:to-neutral-950"
+      aria-labelledby="footer-heading"
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

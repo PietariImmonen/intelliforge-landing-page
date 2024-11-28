@@ -1,23 +1,27 @@
 import { ArrowRight } from "lucide-react";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900 to-[#FFE612] opacity-30" />
+    <BackgroundBeamsWithCollision className="relative overflow-hidden py-24 sm:py-32 min-h-[90vh] flex items-center">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-100/10 hover:ring-gray-100/30">
+            <HoverBorderGradient
+              containerClassName="text-sm leading-6 text-gray-200 background-transparent"
+              duration={2}
+            >
               Transform your workflow with AI{" "}
               <a
                 href="https://intelliforge.vercel.app/onboarding"
                 className="font-semibold text-[#FFE612]"
               >
-                <span className="absolute inset-0" aria-hidden="true" />
                 Learn more <span aria-hidden="true">&rarr;</span>
               </a>
-            </div>
+            </HoverBorderGradient>
           </div>
+
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Master AI for the{" "}
             <span className="text-[#FFE612]">Modern Workplace</span>
@@ -37,6 +41,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </BackgroundBeamsWithCollision>
   );
 }
